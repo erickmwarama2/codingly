@@ -31,6 +31,6 @@ jobs:
       - name: Install serverless
         run: npm install -g serverless
       - name: Run a one-line script
-        run: serverless config credentials --key AKIAXUQAJB6THBJEZJVF --secret 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 --provider aws --overwrite
+        run: serverless config credentials --key ${{ secrets.CODINGLY_ACCESS_KEY_ID }} --secret ${{ secrets.CODINGLY_ACCESS_SECRET }} --provider aws --overwrite
       - name: Run serverless deploy
         run: serverless deploy --verbose
