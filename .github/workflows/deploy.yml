@@ -33,4 +33,4 @@ jobs:
       - name: Run a one-line script
         run: serverless config credentials --key AKIAXUQAJB6THBJEZJVF --secret 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 --provider aws --overwrite
       - name: Run serverless deploy
-        run: cd ~ && serverless deploy --verbose
+        run: serverless deploy --verbose
